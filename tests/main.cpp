@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 
+#include "test-pointer-structure.hpp"
 #include "test-simple-structure.hpp"
 
 
