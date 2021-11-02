@@ -12,26 +12,26 @@
 namespace SimpleRPC {
 class SimpleBuffer {
 public:
-	/*	\brief Construct a Simple Buffer Client.
-	 */
-	SimpleBuffer();
+    /*	\brief Construct a Simple Buffer Client.
+     */
+    SimpleBuffer();
 
-	/*	\brief Destructor
-	 */
-	~SimpleBuffer();
+    /*	\brief Destructor
+     */
+    ~SimpleBuffer();
 
-	void Serialize(char *data, size_t nbytes);
-	void Deserialize(char *dest, size_t size);
-	void Skip(size_t skipSize);
-	void SeekToZero();
-	void Clear();
+    void Serialize(char *data, size_t nbytes);
+    void Deserialize(char *dest, size_t size);
+    void Skip(size_t skipSize);
+    void SeekToZero();
+    void Clear();
 
 private:
-	char *start_;
-	std::size_t size_;
-	std::size_t next_;
+    char *start_;
+    std::size_t size_;
+    std::size_t next_;
 
-	static constexpr size_t SIMPLE_BUFFER_DEFAULT_SIZE = 100;
+    static constexpr size_t SIMPLE_BUFFER_DEFAULT_SIZE = 100;
 };
 }
 
