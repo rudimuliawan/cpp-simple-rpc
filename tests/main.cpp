@@ -4,6 +4,8 @@
 
 #include <gtest/gtest.h>
 
+#include "test-simple-structure.hpp"
+
 
 int main(int argc, char **argv)
 {
